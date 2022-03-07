@@ -1,0 +1,44 @@
+body{
+    display:flex;
+    justify-content: space-around;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+form{
+    
+        border-radius: 5px;
+        background-color: #ebafaf;
+        padding: 70px;
+        display :flex;
+        justify-content: space-between;
+      
+}
+input[type=text]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+
+  }
+  input[type=button] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+
+    
+  }
+  
+  input[type=button]:hover {
+    background-color: #45a049;
+  }
+  .tombol{
+    display:flex;
+    justify-content:space-around;
+    padding: 10px;
+   }
