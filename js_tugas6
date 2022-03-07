@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kalkulator</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        
+        <form id="formulir" name="formulir">
+            <div class="container">
+                <h2>Kalkulator</h2>
+            Angka 1 :<input type="text" id="a1" name="a1" onfocus="kosong1()" value="Angka 1" /><br>
+            Angka 2 :<input type="text" id="a2" name="a2" onfocus="kosong2()" value="Angka 2" /><br>
+            Hasil   <input type="text" id="h" name="hasil" value="0" disabled /><br>
+          <div class="tombol"> <input type='button' name='aksi' value='+' onClick="hitung('+')">
+			<input type='button' name='aksi' value='-' onClick="hitung('-')">
+			<input type='button' name='aksi' value='*' onClick="hitung('*')">
+			<input type='button' name='aksi' value='/' onClick="hitung('/')">
+            <input type='button' name='aksi' value='^' onClick="hitung('**')">
+            <input type="button" name="batal" value="Batal" onclick="kosongAll()" />
+        </div> 
+     </form>
+    </div>
+
+        <script src="js/hitung.js"></script>
+    </body>
+</html>
