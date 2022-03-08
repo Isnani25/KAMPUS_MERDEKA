@@ -1,0 +1,42 @@
+<script>
+    //-----------------membuat class------------------
+    class gempa {
+        //member1 & 2 : variabel dan konstruktor
+        constructor(lokasi, skala) {
+            this.lokasi = lokasi;
+            this.skala = skala;
+            
+        }
+        //member3 fungsi2
+        dampak() {
+            let dampak;
+            //logika fungsi dampak
+            if(this.skala >= 0 && this.skala <= 2) {
+            dampak ="Dampak tidak terasa";
+            }else if(this.skala > 2 && this.skala <= 4) {
+                dampak="Bangunan Retak-retak";
+             }else if(this.skala > 4 && this.skala <= 6) {
+                 dampak="Bangunan Roboh";
+             }else if(this.skala >6 ) {
+                dampak="Bangunan roboh dan berpotensi tsunami";
+             } 
+             else {
+                 dampak='Tidak ada gempa';
+             }
+
+            document.write(
+                `lokasi gempa : ${this.lokasi}
+                <br/> skala gempa : ${this.skala}
+                <br>Dampak Gempa : ${dampak} <hr>`
+
+            );
+        }
+    }
+    let negara=["israel","korea","jepang","thailand","india"]
+    let skalaGempa = [2.6, 4.3, 5.6, 2.3, 6];
+    for(let x in negara){
+
+        let aceh= new gempa(negara[x], skalaGempa[x]);
+        aceh.dampak();
+    }
+</script>
