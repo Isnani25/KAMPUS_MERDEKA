@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Latihan 5 Jquery - Event</title>
+        <script src="js/jquery.js"></script>
+        <script>
+            $("document").ready(function () {
+                $("div.ayam").click(function(){
+                    $("div.ayam").css("background" , "url(images/ayam.gif)")
+                    $("<audio></audio>").attr({
+                        'src' : 'audio/ayam1.mp3',
+                        'volume' : 4,
+                        'autoplay' : 'autoplay'
+                    }).appendTo("body");
+                });
+                    $("div.kambing").click(function(){
+                        $("div.kambing").css("background" , "url(images/kambing.gif)")
+                    $("<audio></audio>").attr({
+                        'src' : 'audio/kambing1.mp3',
+                        'volume' : 4,
+                        'autoplay' : 'autoplay'
+                    }).appendTo("body");
+                });
+                $("div.kucing").click(function(){
+                        $("div.kucing").css("background" , "url(images/kucing.gif)")
+                    $("<audio></audio>").attr({
+                        'src' : 'audio/kucing1.mp3',
+                        'volume' : 4,
+                        'autoplay' : 'autoplay'
+                    }).appendTo("body");
+                });
+                $("div.harimau").click(function(){
+                        $("div.harimau").css("background" , "url(images/harimau.gif)")
+                    $("<audio></audio>").attr({
+                        'src' : 'audio/harimau1.mp3',
+                        'volume' : 4,
+                        'autoplay' : 'autoplay'
+                    }).appendTo("body");
+                });
+            });
+        </script>
+        <style type="text/css">
+            div {
+                background: greenyellow;
+                width: 100px;
+                height: 90px;
+                float: left;
+                margin: 10px;
+                cursor: pointer;
+ 
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Dekati pada setiap kotak untuk menampilkan hewan</h2><br>
+        <div class="ayam">Ini Hewan Ayam</div>
+        <div class="kambing">Ini Hewan Kambing</div>
+        <div class="kucing">Ini Hewan Kucing</div>
+        <div class="harimau">ini Hewan Harimau</div>
+    </body>
+
+</html>
